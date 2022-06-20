@@ -9,7 +9,6 @@ import java.util.List;
 import java.util.Optional;
 
 // 정말 편한 테스트만들기 단축키 command + sh + T
-@Service // -> 스프링이 MemberService 컨테이너에 등록해 준다
 public class MemberService {
     private final MemberRepository memberRepository;
     // 외부에서 넣어주도록 변경
