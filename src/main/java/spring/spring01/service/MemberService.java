@@ -1,5 +1,6 @@
 package spring.spring01.service;
 
+import org.springframework.stereotype.Service;
 import spring.spring01.domain.Member;
 import spring.spring01.repository.MemberRepository;
 import spring.spring01.repository.MemoryMemberRepository;
@@ -8,8 +9,8 @@ import java.util.List;
 import java.util.Optional;
 
 // 정말 편한 테스트만들기 단축키 command + sh + T
+@Service // -> 스프링이 MemberService 컨테이너에 등록해 준다
 public class MemberService {
-
     private final MemberRepository memberRepository;
     // 외부에서 넣어주도록 변경
     public MemberService(MemberRepository memberRepository) {
